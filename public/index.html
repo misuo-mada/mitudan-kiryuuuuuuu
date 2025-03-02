@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マーダーミステリー対話</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>桐生 夏音との密談</h1>
+    <div class="character">
+      <!-- 動画を配置 -->
+      <video autoplay loop muted class="character-video">
+        <source src="videos/kiryu.mp4" type="video/mp4">
+        お使いのブラウザは動画の再生をサポートしていません。
+      </video>
+    </div>
+    <div class="chat">
+      <div id="chat-output"></div>
+      <form id="chat-form">
+        <input type="text" id="user-input" placeholder="メッセージを入力してください..." required>
+        <button type="submit">話す</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
